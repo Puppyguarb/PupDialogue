@@ -1,0 +1,103 @@
+[gd_scene load_steps=4 format=3 uid="uid://h3hkys0mgvji"]
+
+[ext_resource type="Script" path="res://addons/pup_dialogue/nodes/PupGraphNode.gd" id="1_sl5kc"]
+[ext_resource type="Texture2D" uid="uid://b1iuwhhbadou" path="res://addons/pup_dialogue/icons/Edit.svg" id="2_jstrj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1t1q5"]
+
+[node name="DefaultNode" type="GraphNode"]
+custom_minimum_size = Vector2(200, 160)
+offset_right = 200.0
+offset_bottom = 160.0
+resizable = true
+slot/0/left_enabled = false
+slot/0/left_type = 0
+slot/0/left_color = Color(1, 1, 1, 1)
+slot/0/left_icon = null
+slot/0/right_enabled = false
+slot/0/right_type = 0
+slot/0/right_color = Color(1, 1, 1, 1)
+slot/0/right_icon = null
+slot/0/draw_stylebox = true
+slot/1/left_enabled = false
+slot/1/left_type = 0
+slot/1/left_color = Color(1, 1, 1, 1)
+slot/1/left_icon = null
+slot/1/right_enabled = false
+slot/1/right_type = 0
+slot/1/right_color = Color(1, 1, 1, 1)
+slot/1/right_icon = null
+slot/1/draw_stylebox = true
+script = ExtResource("1_sl5kc")
+
+[node name="TitleControl" type="Control" parent="."]
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TitleControl"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -28.0
+offset_bottom = 4.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="EditTitleButton" type="TextureButton" parent="TitleControl/HBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+size_flags_vertical = 4
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("2_jstrj")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="TitleEdit" type="LineEdit" parent="TitleControl/HBoxContainer"]
+unique_name_in_owner = true
+visible = false
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+mouse_filter = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_1t1q5")
+editable = false
+flat = true
+select_all_on_focus = true
+
+[node name="MarginContainer" type="MarginContainer" parent="TitleControl/HBoxContainer"]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+theme_override_constants/margin_left = 2
+theme_override_constants/margin_bottom = 2
+
+[node name="TitleLabel" type="Label" parent="TitleControl/HBoxContainer/MarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+vertical_alignment = 1
+text_overrun_behavior = 3
+
+[node name="Label" type="Label" parent="TitleControl"]
+visible = false
+layout_mode = 0
+offset_left = 32.0
+offset_top = -12.0
+offset_right = 83.0
+offset_bottom = 11.0
+text = "John Cena"
+vertical_alignment = 1
+
+[node name="ControlSeparator" type="Control" parent="."]
+unique_name_in_owner = true
+visible = false
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_vertical = 8
+mouse_filter = 2

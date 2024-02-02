@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://dcouwcuykp3fj"]
+
+[ext_resource type="PackedScene" uid="uid://h3hkys0mgvji" path="res://addons/pup_dialogue/nodes/DefaultNode.tscn" id="1_qjj1c"]
+
+[node name="CommentNode" instance=ExtResource("1_qjj1c")]
+slot/2/left_enabled = false
+slot/2/left_type = 0
+slot/2/left_color = Color(1, 1, 1, 1)
+slot/2/left_icon = null
+slot/2/right_enabled = false
+slot/2/right_type = 0
+slot/2/right_color = Color(1, 1, 1, 1)
+slot/2/right_icon = null
+slot/2/draw_stylebox = true
+
+[node name="TextEdit" type="TextEdit" parent="." index="3"]
+layout_mode = 2
+size_flags_vertical = 3

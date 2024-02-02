@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=2 format=3 uid="uid://daudmhxoos6yn"]
+
+[ext_resource type="Script" path="res://addons/pup_dialogue/objects/DialogueData.gd" id="1_afbif"]
+
+[resource]
+script = ExtResource("1_afbif")
+starts = {}
+nodes = {}
+variables = {}
+comments = Array[String]([])
+strays = Array[String]([])
+characters = ""

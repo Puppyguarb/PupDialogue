@@ -1,0 +1,3 @@
+delapouite for the original icon of a sniffing dog, https://game-icons.net/1x1/delapouite/sniffing-dog.html which has been modified for the dialogue icon
+
+nagidev for the original DialogueNodes project, https://github.com/nagidev

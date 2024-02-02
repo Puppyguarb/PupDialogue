@@ -10,10 +10,14 @@ config_version=5
 
 [application]
 
-config/name="DialogueNodes"
+config/name="PupDialogue"
 run/main_scene="res://examples/Demo.tscn"
 config/features=PackedStringArray("4.2")
 config/icon="res://icon.svg"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/pup_dialogue/plugin.cfg")
 
 [filesystem]
 

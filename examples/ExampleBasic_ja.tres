@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="DialogueData" load_steps=2 format=3 uid="uid://dcrt4jaxw7num"]
 
-[ext_resource type="Script" path="res://addons/dialogue_nodes/objects/DialogueData.gd" id="1"]
+[ext_resource type="Script" path="res://addons/pup_dialogue/objects/DialogueData.gd" id="1"]
 
 [resource]
 script = ExtResource("1")
@@ -17,15 +17,13 @@ nodes = {
 "dialogue": "This would be some Japanese text if I knew Japanese.",
 "offset": Vector2(220, 0),
 "options": {
-"0": {
+0: {
+"condition": {},
 "link": "END",
 "text": "こんにちは。"
 }
 },
-"size": {
-"x": 200.0,
-"y": 261.0
-},
+"size": Vector2(300, 274),
 "speaker": "Greg"
 },
 "2_1": {
@@ -33,7 +31,7 @@ nodes = {
 "offset": Vector2(-20, 80),
 "size": {
 "x": 200.0,
-"y": 122.0
+"y": 237.0
 }
 }
 }
